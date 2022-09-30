@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>Product List</Table></title>
+</head>
+<body>
+<div class="table-container">
+    <h1 class="heading">Product List</h1>
+    <table class="table">
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>UID</th>
+        <th>Coffee Name</th>
+        <th>Origin</th>
+        <th>Variety</th>
+        <th>Notes</th>
+        <th>Intensifier</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let product of products | async">
+        <td data-label="ID"><span>{{product.id}}</span></td>
+        <td data-label="UID"><span>{{product.uid}}</span></td>
+        <td data-label="Coffee Name"><span>{{product.blend_name}}</span></td>
+        <td data-label="Origin"><span>{{product.origin}}</span></td>
+        <td data-label="Variety"><span>{{product.variety}}</span></td>
+        <td data-label="Notes"><span>{{product.notes}}</span></td>
+        <td data-label="Intensifier"><span>{{product.intensifier}}</span></td>
+     </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
