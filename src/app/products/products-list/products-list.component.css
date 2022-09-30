@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: sans-serif;
+}
+.heading{
+    font-size: bold;
+    text-align: center;
+    color: rgb(197, 14, 14);
+    padding: 40px
+}
+.table-container{
+    padding: 0 10%;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    display: block;
+    padding-bottom: 35px;
+}
+.table thead{
+    background-color: bisque;
+}
+.table thead tr th{
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.35px;
+    color: chocolate;
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+    border: 4px soild black;
+}
+.table tbody tr td{
+    font-size: 14px;
+    letter-spacing: 0.40px;
+    font-weight: normal;
+    color: black;
+    background-color: rgb(178, 174, 168);
+    padding: 8px;
+    text-align: center;
+    border: 5px soild #0c519585;
+}
+
+@media(max-width: 768px){
+    .table thead{
+        display: none;
+    }
+    .table, .table tbody,.table tr, .table td{
+        display: block;
+        width: 100%;
+    }
+    .table tr{
+        margin-bottom: 15px;
+    }
+    .table tbody tr td{
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    .table td::before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: left;
+    }
+
+}
