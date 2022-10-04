@@ -20,7 +20,7 @@
       </thead>
       <tbody>
       <tr *ngFor="let product of products | async">
-        <td data-label="ID"><span>{{product.id}}</span></td>
+        <td data-label="ID"><span class="id">{{product.id}}</span></td>
         <td data-label="UID"><span>{{product.uid}}</span></td>
         <td data-label="Coffee Name"><span>{{product.blend_name}}</span></td>
         <td data-label="Origin"><span>{{product.origin}}</span></td>

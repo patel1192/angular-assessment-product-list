@@ -4,13 +4,13 @@
     box-sizing: border-box;
 }
 body{
-    background-color: black;
+    background-color: #FFFFD2;
     font-family: sans-serif;
 }
 .heading{
     font-size: bold;
     text-align: center;
-    color: rgb(197, 14, 14);
+    color: green;
     padding: 40px
 }
 .table-container{
@@ -23,13 +23,13 @@ body{
     padding-bottom: 35px;
 }
 .table thead{
-    background-color: bisque;
+    background-color: #AA96DA;
 }
 .table thead tr th{
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 0.35px;
-    color: chocolate;
+    color: blue;
     opacity: 1;
     padding: 12px;
     vertical-align: top;
@@ -40,10 +40,15 @@ body{
     letter-spacing: 0.40px;
     font-weight: normal;
     color: black;
-    background-color: rgb(178, 174, 168);
+    background-color: lavenderblush;
     padding: 8px;
     text-align: center;
     border: 5px soild #0c519585;
+}
+.table .id{
+    font-size: 14px;
+    font-weight: bold;
+    color: red;
 }
 
 @media(max-width: 768px){
